@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contanior {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contanior>img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.back1,
+.back2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
+  z-index: 10;
+}
+
+.back2 {
+  top: 7%;
+}
+
+.back1 svg,
+.back2 svg {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.back1 p,
+.back2 p {
+  margin-left: 40px;
+}
+
+.back1:hover,
+.back2:hover {
+  cursor: pointer;
+}
+
+.word {
+  position: absolute;
+  top: 16%;
+  left: 0;
+  width: 30%;
+  height: 300px;
+  font-size: 20px;
+}
+
+.yuqi_in {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 100%;
+}
+
+.yuqi_in img {
+  width: 100%;
+  height: 100%;
+}
+
+.yuqi_in div:hover {
+  cursor: pointer;
+}
+
+.yq1 {
+  position: absolute;
+  top: 32.7%;
+  left: 83.9%;
+  width: 4%;
+  height: 1.2%;
+}
+
+.yq2 {
+  position: absolute;
+  top: 33.7%;
+  left: 11.5%;
+  width: 9%;
+  height: 1.2%;
+}
+
+.yq3 {
+  position: absolute;
+  top: 49.5%;
+  left: 83.7%;
+  width: 4%;
+  height: 1.2%;
+}
+
+.yq4 {
+  position: absolute;
+  top: 26.2%;
+  left: 77.3%;
+  width: 3%;
+  height: 1.2%;
+}
+
+.yq5 {
+  position: absolute;
+  top: 53.9%;
+  left: 85.5%;
+  width: 3%;
+  height: 1.2%;
+}
+
+.yq6 {
+  position: absolute;
+  top: 14.5%;
+  left: 56%;
+  width: 10%;
+  height: 1.2%;
+}
+
+.yq7 {
+  position: absolute;
+  top: 42.2%;
+  left: 82.1%;
+  width: 6%;
+  height: 1.2%;
+}
+
+.yq8 {
+  position: absolute;
+  top: 46.7%;
+  left: 83.7%;
+  width: 4%;
+  height: 1.2%;
+}
+
+.yq9 {
+  position: absolute;
+  top: 29.7%;
+  left: 11.5%;
+  width: 6%;
+  height: 1.2%;
+}
+
+.yq10 {
+  position: absolute;
+  top: 37.7%;
+  left: 11.5%;
+  width: 7%;
+  height: 1.2%;
+}
+
+.introduce {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  width: 350px;
+  height: 600px;
+}
+
+.in_img {
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.yu_show {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  height: 20%;
+}
+
+.show {
+  float: left;
+  width: 20%;
+  height: 50%;
+}
+
+.show img {
+  width: 100%;
+  height: 100%;
+}
+
+.word2 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 25%;
+  height: 40%;
+  font-size: 80px;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.next {
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+  width: 80px;
+  height: 70px;
+}
+
+.next:hover {
+  cursor: pointer;
+}
+
+.next img {
+  width: 100%;
+  height: 100%;
+}

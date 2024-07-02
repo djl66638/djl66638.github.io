@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>良渚古玉</title>
+  <link rel="stylesheet" href="css/god.css">
+</head>
+
+<body>
+  <div class="contanior">
+    <div class="bg">
+      <img src="res/bg3.jpg" alt="">
+      <div class="back1" onclick="goback1()" title="返回主菜单">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door"
+          viewBox="0 0 16 16">
+          <path
+            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+        </svg>
+      </div>
+      <div class="back2" onclick="goback2()" title="返回玉器菜单">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+        </svg>
+      </div>
+      <div class="view">
+        <video src="https://oss.itingnao.com/network/2024-06-27/1f8bcc68344e9e4c4dffd52fc3614db4.mp4" controls
+          preload="auto"></video>
+      </div>
+      <div class="introduce">
+        <p>神人兽面纹是良渚文化的一种独特图案，体现了古代人们对自然和神灵的崇拜。
+
+          神人兽面纹首次在1986年于浙江余杭反山被发现，这一图案被认为是良渚文化的标志性图案，引起了学术界的广泛关注。它由神人和兽面两部分组成，神人的形象可能模拟了当时巫师或神话般首领的形象，而兽面则可能代表了部族的保护神。这种图案不仅在玉器上广泛施刻，几乎遍及除玉璧之外的所有个体较大的器种上，而且在高等级墓葬中出土的玉器上尤为常见。完整的神人兽面纹在玉器上并不多见，集中出土于反山和瑶山两个遗址，其中反山12号墓出土的玉琮上就雕刻有相似的神人兽面纹。
+
+          神人兽面纹的雕刻技艺出神入化，单个图像高约3厘米、宽约4厘米，雕琢人对技术的要求非常高，能够在1毫米的宽度内雕刻出5条不交错的细线，这种技术即使放在今天也同样令人惊叹。神人兽面纹的发现和研究，为理解良渚文化时期的宗教信仰、社会结构和艺术风格提供了重要的线索。它不仅是良渚玉器上的主体纹饰，还被视为良渚人的“神徽”，象征着辟邪通灵的法力和神人合一的特殊身份。
+
+          此外，神人兽面纹的发现还揭示了良渚先民可能信仰着龙或扬子鳄等神话或现实中的生物，这些信仰反映了他们对自然力量的敬畏和崇拜。兽面可能为部族的保护神，起着驱邪辟祟的作用，而鸟作为氏族的图腾神，墓主人藉神鸟可以通灵而升天。因此，神人兽面复合纹可视作氏族的徽纹，享有饰着这种徽纹的玉器的墓主人，意味着拥有辟邪通灵的法力，而且有着神人合一的特殊身份。
+        </p>
+      </div>
+      <div class="next" onclick="goto()">
+        <img src="res/button1.png" alt="" title="下一页">
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  function goto() {
+    location.href = "yuqi_in.html";
+  }
+
+  function goback1() {
+    location.href = "catalog.html";
+  }
+
+  function goback2() {
+    location.href = "yuqi_catalog.html";
+  }
+
+</script>
+
+</html>

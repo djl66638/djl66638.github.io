@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>良渚古玉</title>
+  <!-- <link rel="stylesheet" href="css/yuqi_catalog.css"> -->
+</head>
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!--动画库-->
+<link rel="stylesheet" href="css/animate.min.css">
+
+<!--核心样式-->
+<link rel="stylesheet" href="css/yuqi_catalog.css" type="text/css" />
+
+</head>
+
+<body>
+  <div class="back1" onclick="goback1()" title="返回主菜单">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door"
+      viewBox="0 0 16 16">
+      <path
+        d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+    </svg>
+  </div>
+  <article class="content content-what">
+    <img src="res/bg4.jpg" alt="" class="img1">
+    <div class="content-main what-list" style="vertical-align: middle;">
+      <div class="what-item what-item-1 wow fadeInLeft" data-wow-delay="0.6s" data-num="1"
+        style="visibility: hidden; animation-delay: 0.6s; animation-name: none;" onclick="goto1(this)">
+        <span>神人兽面纹</span>
+        <div class="what-item-bg"></div>
+      </div>
+      <div class="what-item what-item-2 wow fadeInLeft" data-wow-delay="0.4s" data-num="2"
+        style="visibility: hidden; animation-delay: 0.4s; animation-name: none;" onclick="goto2(this)">
+        <span>找出玉器</span>
+        <div class="what-item-bg"></div>
+      </div>
+      <div class="what-item what-item-3 wow fadeInLeft" data-wow-delay="0.2s" data-num="3"
+        style="visibility: hidden; animation-delay: 0.2s; animation-name: none;" onclick="goto3(this)">
+        <span>玉琮制作</span>
+        <div class="what-item-bg"></div>
+      </div>
+    </div>
+
+    <div class="content-main" style="clear:both;">
+      <p class="what-more active-more" style="display: block;">神人兽面纹</p>
+    </div>
+    <div style="height:67px;"></div>
+  </article>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/main1.js"></script>
+  <script type="text/javascript">
+    var whatList = ['神人兽面纹', '找出玉器', '玉琮制作'];
+    jQuery(document).ready(function () {
+      new WOW().init();
+    });
+    function goto1(e) {
+      if (e.classList.contains("what-item-active")) {
+        location.href = "god.html";
+      }
+    }
+    function goto2(e) {
+      if (e.classList.contains("what-item-active")) {
+        location.href = "yuqi_in.html";
+      }
+    }
+    function goto3(e) {
+      if (e.classList.contains("what-item-active")) {
+        location.href = "yucong.html";
+      }
+    }
+
+    function goback1() {
+      location.href = "catalog.html";
+    }
+  </script>
+
+</html>
