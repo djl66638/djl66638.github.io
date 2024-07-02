@@ -195,6 +195,8 @@ a {
   width: 100%;
   height: 100%;
   z-index: -2;
+  opacity: 0.5;
+  background-color: gray;
 }
 
 .yu_show {
@@ -222,7 +224,18 @@ a {
   left: 0%;
   width: 25%;
   height: 40%;
-  font-size: 80px;
+  font-size: 30px;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.word3 {
+  position: absolute;
+  top: 55%;
+  left: 0%;
+  width: 25%;
+  height: 40%;
+  font-size: 30px;
   text-align: center;
   transform: translateY(-50%);
 }
