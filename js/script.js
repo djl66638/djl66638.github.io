@@ -15,14 +15,14 @@ const slideData = [
 
   {
     index: 2,
-    headline: '知识总结',
+    headline: '知识回顾',
     button: '进入',
     src: 'img/index2.jpg'
   },
 
   {
     index: 3,
-    headline: '学习建议',
+    headline: '课后练习',
     button: '进入',
     src: 'img/index3.jpg'
   }];
