@@ -86,7 +86,7 @@ function getStyle(obj, attr) {
 	}
 }
 
-window.onload = function() {
+window.onload = function () {
 	TiMu()
 	mintime = 1;
 	//  timer = setInterval("CountDown()", 1000); 
@@ -96,13 +96,13 @@ window.onload = function() {
 	addClass(dact, active)
 	var timu_id = 0
 	for (var i = 0; i < document.querySelectorAll(".entrance-bottom-frame-line-button").length; i++) {
-		document.querySelectorAll(".entrance-bottom-frame-line-button")[i].onclick = function() {
+		document.querySelectorAll(".entrance-bottom-frame-line-button")[i].onclick = function () {
 
 			var selectedOption = this.querySelector(".entrance-bottom-frame-line-button-id").innerHTML;
 			if (selectedOption === correctAnswers[timu_id]) {
 				this.style.backgroundColor = "green";
 				if (timu_id < document.querySelectorAll(".entrance-bottom-frame-line").length - 1) {
-					setTimeout(function() {
+					setTimeout(function () {
 						var frame_left = getStyle(document.querySelector(".entrance-bottom-frame"),
 							'marginLeft');
 						document.querySelector(".entrance-bottom-frame").style.marginLeft = parseInt(
@@ -116,8 +116,10 @@ window.onload = function() {
 							1], none);
 					}, 500); // 延时跳转，答对变绿
 				} else {
-					// alert("最后一题啦");
-					history.back();
+					alert("恭喜你答对所有题目！即将返回主菜单");
+					setTimeout(function () {
+						window.location.href = "catalog.html";
+					}, 2000);
 				}
 			} else {
 				this.style.backgroundColor = "red"; // 答错变红
@@ -179,5 +181,5 @@ var data1 = [{
 		"湖南省长沙市",
 		"浙江省杭州市",
 	],
-}, 
+},
 ];
