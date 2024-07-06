@@ -89,8 +89,8 @@ function getStyle(obj, attr) {
 window.onload = function () {
 	TiMu()
 	mintime = 1;
-	//  timer = setInterval("CountDown()", 1000); 
 	var dact = document.querySelector(".entrance-bottom-frame-line")
+	var back = document.querySelector(".card-shadow")
 	var active = "active"
 	var none = "none"
 	addClass(dact, active)
@@ -116,10 +116,7 @@ window.onload = function () {
 							1], none);
 					}, 500); // 延时跳转，答对变绿
 				} else {
-					alert("恭喜你答对所有题目！即将返回主菜单");
-					setTimeout(function () {
-						window.location.href = "catalog.html";
-					}, 2000);
+					back.style.display = "block";
 				}
 			} else {
 				this.style.backgroundColor = "red"; // 答错变红
