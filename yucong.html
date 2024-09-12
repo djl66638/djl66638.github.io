@@ -18,25 +18,25 @@
       <img src="res/makeyc.png" alt="">
     </div>
     <div class="word3">
-      请将对应的工具及玉石移到中间工具台上。（按要求找到工具及玉石并放置正确才能进行下一步）
+      请将对应的工具及玉石移到中间工具台上。（按要求找到工具及玉石并放置正确才能进行下一步，将鼠标移至工具上可了解工具详情）
     </div>
     <div class="first tips" id="one">
-      请找出合适的工具完成原石的切割。
+      1.请找出合适的工具完成原石的切割。
     </div>
     <div class="second tips" id="two">
-      请找出合适的工具完成原石进一步的切割。
+      2.请找出合适的工具完成原石进一步的切割。
     </div>
     <div class="third tips" id="three">
-      请找出合适的工具对原石钻洞。
+      3.请找出合适的工具对原石钻洞。
     </div>
     <div class="fourth tips" id="four">
-      请找出合适的工具对洞打磨。
+      4.请找出合适的工具对洞打磨。
     </div>
     <div class="fifth tips" id="five">
-      请找出合适的工具将玉石研磨切割出大致形态。
+      5.请找出合适的工具将玉石研磨切割出大致形态。
     </div>
     <div class="sixth tips" id="six">
-      请找出合适的工具完成玉琮线条的切割（两个）。
+      6.请找出合适的工具完成玉琮线条的切割（两个）。
     </div>
     <div class="gzt">
       <img src="res/gzt.png" alt="">
@@ -48,13 +48,13 @@
       <img src="res/m4.png" alt="" class="m4">
       <img src="res/m5.png" alt="" class="m5">
       <img src="res/m6.png" alt="" class="m6">
-      <img src="res/g1.jpg" alt="" class="s1">
-      <img src="res/g2.png" alt="" class="s2">
-      <img src="res/g3.png" alt="" class="s3">
-      <img src="res/g4.png" alt="" class="s4">
-      <img src="res/g5.png" alt="" class="s5">
-      <img src="res/g6.png" alt="" class="s6">
-      <img src="res/g7.png" alt="" class="s7">
+      <img src="res/g1.jpg" alt="" class="s1" title="石片，常用于粗切割">
+      <img src="res/g2.jpg" alt="" class="s2" title="麻绳，常用于精切割">
+      <img src="res/g3.png" alt="" class="s3" title="实心钻，常用于钻孔">
+      <img src="res/g4.png" alt="" class="s4" title="燧石，常用于雕琢">
+      <img src="res/g5.png" alt="" class="s5" title="磨石，常用于抛光打磨">
+      <img src="res/g6.png" alt="" class="s6" title="石弓，常用于雕刻">
+      <img src="res/g7.png" alt="" class="s7" title="动物筋，常用于切割雕刻">
     </div>
     <div class="back1" onclick="goback1()" title="返回主菜单">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door"
@@ -217,7 +217,7 @@
         img2.style.zIndex = "-2";
         g2.style.zIndex = "-2";
         move(img3);
-        word4.innerHTML = "恭喜你完成进一步切割步骤！";
+        word4.innerHTML = "恭喜你完成进一步切割步骤！工匠用柔性的线状物如麻绳、马尾、动物筋等，将两端绑在弓形木器上，制成锼弓或直接用手攥住线状物的两端拉动，搭配解玉砂(金刚砂、石英、石榴石等为“解玉砂”，辅以水来研磨玉石)，分别从坯体两侧向中间切割，快接近时再敲落玉料。";
       }
     } else if (window.getComputedStyle(s3).opacity == '1') {
       if (check3()) {
@@ -228,7 +228,7 @@
         img3.style.zIndex = "-2";
         g3.style.zIndex = "-2";
         move(img4);
-        word4.innerHTML = "恭喜你完成钻洞步骤！";
+        word4.innerHTML = "恭喜你完成钻洞步骤！在良渚玉器上有许多的钻孔，一是为了实用，二是为了美观。钻孔有管钻、实心钻和琢钻等几种方法。经过长时间的转动钻杆，才能将坚硬的玉石钻穿。节数越多的玉琮，钻孔的时间自然越长。";
       }
     } else if (window.getComputedStyle(s4).opacity == '1') {
       if (check4()) {
@@ -239,7 +239,7 @@
         img4.style.zIndex = "-2";
         g4.style.zIndex = "-2";
         move(img5);
-        word4.innerHTML = "恭喜你完成研磨抛光洞步骤！";
+        word4.innerHTML = "恭喜你完成研磨抛光洞步骤！良渚玉器纹样的线条或坚挺刚劲，或圆滑流畅，可见良渚人使用着一种游刃有余的雕刻工具。由于玉的硬度很大，采用的工具也一定十分的坚硬。";
       }
     } else if (window.getComputedStyle(s5).opacity == '1') {
       if (check5()) {
@@ -250,7 +250,7 @@
         img5.style.zIndex = "-2";
         g5.style.zIndex = "-2";
         move(img6);
-        word4.innerHTML = "恭喜你完成初步研磨切割玉石步骤！";
+        word4.innerHTML = "恭喜你完成抛光研磨玉石步骤！良渚晚期的玉器薄厚均匀，器表光洁，可见研磨水平之高。玉器的抛光已经超越了实用目的而进入了审美的范畴。最早的抛光技术推测是用解玉砂磨制器表，使之平滑光洁。藏数千年，虽然大多都发白，但仍有一些依然润泽光亮。";
       }
     } else if (window.getComputedStyle(s6).opacity == '1') {
       if (check6()) {
